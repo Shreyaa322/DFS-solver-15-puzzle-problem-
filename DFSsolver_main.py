@@ -1,4 +1,4 @@
-from C_612302044_ShreyaPatil import PuzzleState, DFSSolver, Input, Output
+from DFSsolver import PuzzleState, DFSSolver, Input, Output
 
 if __name__ == "__main__":
     start = Input.get_user_input()
@@ -12,4 +12,5 @@ if __name__ == "__main__":
     solver = DFSSolver(start, goal)
     path = solver.solve(max_depth=200)
     Output.display_solution(path)
+
 
